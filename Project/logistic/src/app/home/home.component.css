@@ -1,0 +1,217 @@
+.example-card {
+  width: 900px;
+  z-index: 10;
+  box-shadow: 1px 1px 20px 0px rgba(50, 50, 50, 0.3);
+  border-radius: 15px;
+  font-family:'Courier New', Courier, monospace;
+}
+@media (max-width:700px){
+  .example-card {
+    width: 500px;
+    z-index: 10;
+    box-shadow: 1px 1px 20px 0px rgba(50, 50, 50, 0.3);
+    border-radius: 15px;
+    font-family:'Courier New', Courier, monospace;
+  }
+}
+@media (max-width:400px){
+  .example-card {
+    width: 346px;
+    z-index: 10;
+    box-shadow: 1px 1px 20px 0px rgba(50, 50, 50, 0.3);
+    border-radius: 15px;
+    font-family:'Courier New', Courier, monospace;
+  }
+}
+
+mat-form-field{
+  margin: 0 10px;
+  border-left: 1px solid #f6685e;
+  padding-left: 10px;
+}
+
+mat-card .btn {
+  margin-top: 15px;
+  width: 140px;
+  min-height: 40px;
+  border: 1px solid #f6685e;
+  font-size: 20px;
+  font-weight: 500;
+  color: #f6685e;
+  cursor: pointer;
+  background-color: #f6685e;
+  color: #fff;
+  outline: none;
+}
+
+mat-card .btn:hover {
+  background: #877ae9;
+  border: 1px solid #f6685e;
+  color: #fff;
+  transition: all .4s ease;
+}
+
+.contactInfo_div{
+  display: flex;
+  margin: auto;
+}
+
+.example-card2 {
+  max-width: 400px;
+  z-index: 5;
+  background-image: linear-gradient(to bottom, #03a9f43b, white, white);
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.contactInfo_div .mat-card {
+  display: block;
+  padding: 16px;
+  border-radius: 27px;
+  width: 40%;
+  position: absolute;
+    left: 30%;
+}
+
+.contactInfo_div .mat-card>:first-child, .mat-card-content>:first-child {
+margin-top: 17px;
+margin-bottom: 13px;
+}
+
+.contactInfo_div mat-card.mat-card.mat-focus-indicator.example-card {
+font: 400 21px/31px Roboto, "Helvetica Neue", sans-serif;
+letter-spacing: normal;
+}
+
+/* table css */
+
+ .table1{
+  position: absolute;
+  z-index: 2;
+  left: 56%;
+  top: 140%;
+  transform: translate(-50%,-50%);
+  width: 28%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 0px 0 0;
+  overflow: hidden;
+
+ }
+@media(max-width:700px){
+  .table1{
+    position: absolute;
+    z-index: 2;
+    left: 21%;
+    top: 173%;
+    transform: translate(-50%,-50%);
+    width: 28%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 0px 0 0;
+    overflow: scroll;
+
+   }
+}
+
+ .table2{
+  position: absolute;
+  z-index: 2;
+  left: 84%;
+  top: 140%;
+  transform: translate(-50%,-50%);
+  width: 28%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 0px 12px 0 0;
+  overflow: hidden;
+
+ }
+ @media(max-width:700px){
+  .table2{
+    position: absolute;
+    z-index: 2;
+    left: 45%;
+    top: 173%;
+    transform: translate(-50%,-50%);
+    width: 28%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 0px 0 0;
+    overflow: hidden;
+
+   }
+}
+
+ .table3{
+  position: absolute;
+  z-index: 2;
+  left: 22%;
+  top: 121%;
+  transform: translate(-50%,-50%);
+  width: 28%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 0px 12px 0 0;
+  overflow: hidden;
+
+ }
+ @media(max-width:700px){
+  .table3{
+    position: absolute;
+    z-index: 2;
+    left: 33%;
+    top: 121%;
+    transform: translate(-50%,-50%);
+    width: 28%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 0px 0 0;
+    overflow: hidden;
+
+   }
+}
+@media(max-width:400px){
+  .table3{
+    position: absolute;
+    z-index: 2;
+    left: 22%;
+    top: 114%;
+    transform: translate(-50%,-50%);
+    width: 28%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 0px 0 0;
+    overflow: hidden;
+
+   }
+}
+ td , th{
+  padding: 15px 20px;
+  text-align: center;
+
+ }
+ th{
+  background-color: #85eae0;
+  color: black;
+  font-family: 'Open Sans',Sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+
+ }
+ tr{
+  width: 100%;
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+ }
+ tr:nth-child(even){
+  background-color: #eeeeee;
+ }

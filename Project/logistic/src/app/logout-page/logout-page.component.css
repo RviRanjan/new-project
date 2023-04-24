@@ -1,0 +1,16 @@
+.card-div{
+    margin: auto 0;
+    position: relative;
+}
+.card-div .btn-div {
+    z-index: 5;
+    position: absolute;
+    top: 80%;
+    background:none;
+    border: 1px solid #ff8e86;
+    font-size: 13px;
+    font-weight: 500;
+    color: #f6685e;
+    cursor: pointer;
+    outline: none;
+}

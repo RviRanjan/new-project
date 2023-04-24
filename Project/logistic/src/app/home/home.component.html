@@ -1,0 +1,116 @@
+<div class="container">
+  <div class="hotel_content">
+    <div class="info">
+      <h2>Calculate Price</h2>
+    </div>
+    <div class="booking_info">
+      <div class="opt">
+        <!-- <button class="bttn2">Flight</button>
+  <button class="bttn2">Rail</button> -->
+        <button class="bttn2">Road</button>
+      </div>
+      <mat-card class="example-card">
+        <form [formGroup]="data" (ngSubmit)="onSubmit()" autocomplete="off">
+          <mat-form-field>
+            <mat-label>From</mat-label>
+            <input matInput placeholder="Enter Source" formControlName="src" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let item of allDataSrc" [value]="item">
+                {{item}}
+              </mat-option>
+            </mat-autocomplete>
+            <mat-error>This Field is required</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>To</mat-label>
+            <input matInput placeholder="Enter Destination" formControlName="des" [matAutocomplete]="auto2">
+            <mat-autocomplete #auto2="matAutocomplete">
+              <mat-option *ngFor="let item2 of allDataDes" [value]="item2">
+                {{item2}}
+              </mat-option>
+            </mat-autocomplete>
+            <mat-error>This Field is required</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Distance</mat-label>
+            <input matInput placeholder="Enter Distance in km" formControlName="km">
+            <mat-error>This Field is required</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Weight</mat-label>
+            <input matInput placeholder="Enter Weight" formControlName="kg">
+            <mat-error>This Field is required</mat-error>
+          </mat-form-field>
+          <button mat-raised-button type="submit" class="btn">Calculate</button>
+        </form>
+      </mat-card>
+    </div>
+    <div *ngIf="flag">
+      <table class="table3">
+        <tr>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Distance</th>
+        </tr>
+        <tr>
+          <td>{{source}}</td>
+          <td>{{destination}}</td>
+          <td>{{distance}}</td>
+        </tr>
+      </table>
+    </div>
+    <div *ngIf="flag">
+      <table class="table1">
+        <tr>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let n of name">
+          <td>{{partnerName[n]}}</td>
+        </tr>
+      </table>
+      <table class="table2">
+        <tr>
+          <th>Price</th>
+        </tr>
+        <tr *ngFor="let p of price">
+          <td>{{p}}</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <table *ngIf="!flag && flag2">
+        <tr>
+          <th>Name</th>
+          <th>Within city*</th>
+          <th>Within State*</th>
+          <th>Within country*</th>
+        </tr>
+        <tr>
+          <td>Bluedart</td>
+          <td>100 Rs</td>
+          <td>500 Rs</td>
+          <td>1000 Rs</td>
+        </tr>
+        <tr>
+          <td>Fedex</td>
+          <td>85 Rs</td>
+          <td>250 Rs</td>
+          <td>850 Rs</td>
+        </tr>
+        <tr>
+          <td>DHL</td>
+          <td>50 Rs</td>
+          <td>150 Rs</td>
+          <td>900 Rs</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <img src="../../assets/img/hotel.png" class="hotel" alt="">
+  <img src="../../assets/img/car2.png" class="car2" alt="">
+  <img src="../../assets/img/car4.png" class="car4" alt="">
+  <img src="../../assets/img/cloud.png" class="cloud" alt="">
+  <img src="../../assets/img/cloud.png" class="cloud_2" alt="">
+  <img src="../../assets/img/cloud.png" class="cloud_3" alt="">
+  <img src="../../assets/img/cloud.png" class="cloud_4" alt="">
+</div>

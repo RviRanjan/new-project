@@ -1,0 +1,26 @@
+mat-card{
+    background-image: linear-gradient(to bottom, #03a9f43b, white, white);
+  }
+  
+  .container .signin mat-card button {
+    background-color: #03a9f43b;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+  }
+  
+  .signin {
+  position: absolute;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  left: 49.5%;
+  z-index: 6;
+  text-align: center;
+  overflow: hidden;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  

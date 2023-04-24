@@ -1,0 +1,101 @@
+.example-card {
+    width: 450px;
+    box-shadow: 1px 1px 20px 0px rgba(50, 50, 50, 0.3);
+    border-radius: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.matDiv {
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* .tableDiv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+} */
+
+
+
+.mssDiv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+}
+.table1{
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%,-50%);
+  width: 28%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 0px 0 0;
+  overflow: hidden;
+
+ }
+
+@media(max-width:1300px){
+.table1{
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 71%;
+  transform: translate(-50%,-50%);
+  width: 28%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 0px 0 0;
+  overflow: hidden;
+
+ }
+}
+
+ @media(max-width:700px){
+  .table1{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 76%;
+    transform: translate(-50%,-50%);
+    width: 28%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 0px 0 0;
+    overflow: hidden;
+
+   }
+}
+
+
+ td , th{
+  padding: 15px 20px;
+  text-align: center;
+
+ }
+ th{
+  background-color: #85eae0;
+  color: black;
+  font-family: 'Open Sans',Sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+
+ }
+ tr{
+  width: 100%;
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+ }
+ tr:nth-child(even){
+  background-color: #eeeeee;
+ }
+

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="matDiv">
+        <mat-card class="example-card">
+            <form fxLayout="column" autocomplete="off" [formGroup]="pincodeData" (ngSubmit)="onSubmit()">
+                <mat-form-field>
+                    <mat-label>Pincode</mat-label>
+                    <input matInput placeholder="Enter Pincode" formControlName="pincode">
+                    <mat-error>This Field is required</mat-error>
+                </mat-form-field>
+                <button mat-raised-button type="submit" class="btn">Search</button>
+            </form>
+        </mat-card>
+    </div>
+
+    <table class="table1"  *ngIf="flag">
+      <tr>
+        <th>
+            Service Provider Name
+        </th>
+    </tr>
+    <tr *ngFor="let p of pincodePartner">
+      <td>{{p}}</td>
+  </tr>
+</table>
+ </div>
+    <div class="mssDiv" *ngIf="!flag">
+        {{message}}
+    </div>
+

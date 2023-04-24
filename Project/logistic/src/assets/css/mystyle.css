@@ -1,0 +1,274 @@
+
+input {
+    font-family: "Poppins", sans-serif;
+}
+  
+.booking_info .opt, .booking_info .opt span, .booking_details, .booking_details .item .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+  
+.container {
+  width: 100%;
+  min-height: 89vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#03a9f43b), color-stop(white), to(white));
+  background-image: linear-gradient(to bottom, #03a9f43b, white, white);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container img {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.hotel_content {
+  display: block;
+  text-align: center;
+  min-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  margin-top: 40px;
+}
+
+.info h2 {
+  color: #241a71;
+}
+
+.booking_info {
+  margin-top: -15px;
+}
+
+.booking_info .opt {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+
+.booking_info .opt .bttn2 {
+  width: 120px;
+  min-height: 60px;
+  border-radius: 20px;
+  background-color:rgb(134, 235, 225);
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  margin-right: .2rem;
+  
+}
+
+.booking_info .opt .bttn2:hover {
+  background: none;
+  border: 1px solid #f6685e;
+  color: #f6685e;
+  transition: all .4s ease;
+}
+
+.hotel {
+  position: absolute;
+  bottom: 5.2vw;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.car2 {
+  position: absolute;
+  bottom: 5%;
+  -webkit-animation: drive 15s;
+          animation: drive 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 80px;
+  z-index: 3;
+}
+.car4 {
+  position: absolute;
+  bottom: 1%;
+  -webkit-animation: drive_2 15;
+          animation: drive_2 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 80px;
+  z-index: 3;
+}
+
+.cloud {
+  position: absolute;
+  top: -120px;
+  -webkit-animation: cloud_1 50s;
+          animation: cloud_1 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 800px;
+  z-index: 1;
+}
+
+.cloud_2 {
+  position: absolute;
+  bottom: 50%;
+  -webkit-animation: cloud_2 60s;
+          animation: cloud_2 60s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 500px;
+  z-index: 1;
+}
+
+.cloud_3 {
+  position: absolute;
+  bottom: 60%;
+  -webkit-animation: cloud_2 30s;
+          animation: cloud_2 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 500px;
+  z-index: 1;
+}
+
+.cloud_4 {
+  position: absolute;
+  bottom: 70%;
+  -webkit-animation: cloud_2 70s;
+          animation: cloud_2 70s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 500px;
+  z-index: 1;
+}
+
+@-webkit-keyframes drive {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    -webkit-transform: translateX(1950px);
+            transform: translateX(1950px);
+  }
+}
+
+@keyframes drive {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    -webkit-transform: translateX(1950px);
+            transform: translateX(1950px);
+  }
+}
+
+@-webkit-keyframes drive_2 {
+  from {
+    -webkit-transform: translateX(1950px);
+            transform: translateX(1950px);
+  }
+  to {
+    -webkit-transform: translateX(-130px);
+            transform: translateX(-130px);
+  }
+}
+
+@-webkit-keyframes drive_3 {
+  from {
+    -webkit-transform: translateX(1950px);
+            transform: translateX(1950px);
+  }
+  to {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+@keyframes drive_3 {
+  from {
+    -webkit-transform: translateX(1950px);
+            transform: translateX(1950px);
+  }
+  to {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+@keyframes drive_2 {
+  from {
+    -webkit-transform: translateX(1950px);
+            transform: translateX(1950px);
+  }
+  to {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+
+@-webkit-keyframes cloud_1 {
+  from {
+    -webkit-transform: translateX(1900px);
+            transform: translateX(1900px);
+  }
+  to {
+    -webkit-transform: translateX(-900px);
+            transform: translateX(-900px);
+  }
+}
+
+@keyframes cloud_1 {
+  from {
+    -webkit-transform: translateX(1900px);
+            transform: translateX(1900px);
+  }
+  to {
+    -webkit-transform: translateX(-900px);
+            transform: translateX(-900px);
+  }
+}
+
+@-webkit-keyframes cloud_2 {
+  from {
+    -webkit-transform: translateX(1900px);
+            transform: translateX(1900px);
+  }
+  to {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+@keyframes cloud_2 {
+  from {
+    -webkit-transform: translateX(1900px);
+            transform: translateX(1900px);
+  }
+  to {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}

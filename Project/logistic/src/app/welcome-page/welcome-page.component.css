@@ -1,0 +1,27 @@
+
+.card-div{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-div .tackForm {
+    margin-top: 30px;
+}
+.card-div .tackForm input {
+    width: 350px;
+    height: 35px;
+    padding: 10px 0 10px 10px ;
+}
+
+  
+  
+  

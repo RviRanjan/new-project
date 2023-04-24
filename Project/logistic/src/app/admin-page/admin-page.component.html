@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="matDiv">
+        <mat-card class="example-card">
+            <form fxLayout="column" autocomplete="off" [formGroup]="newData" (ngSubmit)="onSubmit()">
+                <mat-form-field>
+                    <mat-label>From</mat-label>
+                    <input matInput placeholder="Enter Source" formControlName="src">
+                    <mat-error>This Field is required</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>To</mat-label>
+                    <input matInput placeholder="Enter Destination" formControlName="des">
+                    <mat-error>This Field is required</mat-error>
+                </mat-form-field>
+                <br>
+                <label>Partner</label>
+                <div formGroupName="partner">
+                    <mat-form-field>
+                        <mat-label>Partner1</mat-label>
+                        <input matInput placeholder="DTDC" formControlName="partner1">
+                        <mat-error>This Field is required</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Partner2</mat-label>
+                        <input matInput placeholder="BLUEDART" formControlName="partner2">
+                        <mat-error>This Field is required</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Partner3</mat-label>
+                        <input matInput placeholder="GATI" formControlName="partner3">
+                        <mat-error>This Field is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <button mat-raised-button type="submit" class="btn">Add</button>
+            </form>
+        </mat-card>
+    </div>
+</div>
