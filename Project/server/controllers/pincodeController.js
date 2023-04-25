@@ -15,4 +15,16 @@ router.post('/pincode', (req, res) => {
     })
 })
 
+
+router.post('/addDatapincode', (req, res) => {
+    var { pincode,partner } = req.body
+    var newUser = new PincodeModel({ pincode, partner });
+    newUser.save((err, doc) => {
+        if (err) { throw err }
+        else {
+            res.json({ message: "Data inserted sucessfully", status: 200 })
+        }
+    })
+})
+
 module.exports = router;

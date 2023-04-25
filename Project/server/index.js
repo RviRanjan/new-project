@@ -21,6 +21,7 @@ app.use('/', logisticHomeController);
 app.use('/admin', adminController)
 app.use('/', logisticHomeController)
 app.use('', pincodeController);
+app.use('addDatapincode',pincodeController)
 app.use('/adminReg', adminReg)
 
 app.listen(port, () => {
