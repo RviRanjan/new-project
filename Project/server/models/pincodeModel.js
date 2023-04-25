@@ -2,12 +2,7 @@ const mongoose = require('mongoose');
 
 var pincodeDataSchema = new mongoose.Schema({
     pincode: String,
-    partner:
-    {
-        partner1: String,
-        partner2: String,
-        partner3: String
-    }
+    partner:Array
 });
 
 var pincodeModel = mongoose.model('pincodeData', pincodeDataSchema);
