@@ -14,6 +14,7 @@ export class AuthService {
   private allDataSrc = "http://localhost:5000/allData/src";
   private allDataDes = "http://localhost:5000/allData/des";
   private pincodeURL = "http://localhost:5000/pincode";
+   private sendemaildata = "http://localhost:5000/send-email";
   constructor(private http: HttpClient, private route: Router, private alertify: AlertifyService) { }
 
   getAllDataSrc() {
@@ -55,5 +56,9 @@ export class AuthService {
 
   getPincodeData(pincode: any) {
     return this.http.post(this.pincodeURL, pincode);
+  }
+
+  sendemail(formData:any){
+     return this.http.post(this.sendemaildata, formData);
   }
 }

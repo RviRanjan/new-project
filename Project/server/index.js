@@ -9,7 +9,11 @@ const logisticRegController = require('./controllers/logisticRegController');
 const adminController = require('./controllers/adminController');
 const pincodeController = require('./controllers/pincodeController')
 const adminReg = require('./controllers/adminReg')
+const email =require('./controllers/emailcontroller')
 const app = express();
+
+
+
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -23,6 +27,8 @@ app.use('/', logisticHomeController)
 app.use('', pincodeController);
 app.use('addDatapincode',pincodeController)
 app.use('/adminReg', adminReg)
+app.use('/send-email',email)
+
 
 app.listen(port, () => {
     console.log(`Server is running at port no. : ${port}`);
