@@ -20,7 +20,9 @@ export class ContactUsComponent implements OnInit {
     });
   }
 
+  
  onSubmit() {
+
     const formData = this.form.value;
     console.log(formData)
     this.auth.sendemail({ formData}).subscribe(

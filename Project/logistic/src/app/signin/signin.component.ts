@@ -5,6 +5,7 @@ import { AlertifyService } from 'src/services/alertify.service';
 import { AuthService } from 'src/services/auth.service';
 
 @Component({
+  
   selector: 'app-signin',
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.css']

@@ -14,9 +14,10 @@ router.post('', (req, res) => {
     service:'gmail',
     auth: {
       user: 'salonisinghrajput27017@gmail', // replace with your actual email address
-      pass: 'Ravis9561@' // replace with your actual email password
+      pass: 'Ravis9561@' // replace with your actual email password yaha par
     }
   });
+  
 
     // setup email data with unicode symbols
   const mailOptions = {

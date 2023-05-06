@@ -7,6 +7,7 @@ import { AlertifyService } from './alertify.service'
   providedIn: 'root'
 })
 export class AuthService {
+  
 
   private registrationUrl = "http://localhost:5000/signup";
   private loginUrl = "http://localhost:5000/signin";
